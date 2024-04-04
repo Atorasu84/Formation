@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Formation</title>
+</head>
+<body>
+  <aside>
+    <!-- <button id="dark-mode-toggle">Activer le mode sombre</button> -->
+    <nav>
+      <ul id="nav-list">
+        <li class="nav-item"><a href="#top" class="nav-link">Formation</a></li>
+        <li class="nav-item"><a href="#1" class="nav-link">Glossaire</a></li>
+        <li class="nav-item"><a href="#2" class="nav-link">div, span et section</a></li>
+        <li class="nav-item"><a href="#3" class="nav-link">Tableau</a></li>
+        <li class="nav-item"><a href="#4" class="nav-link">Vidéo et audio</a></li>
+        <li class="nav-item"><a href="#5" class="nav-link">Formulaires</a></li>
+        <li class="nav-item"><a href="#6" class="nav-link">Liste
+        </a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main id="top">
+    <h1>A apprendre</h1>
+    <div class="section" id="1">
+      <h2>Glossaire</h2>
+      <article>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+    
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+            
+          <dt>JavaScript</dt>
+          <dd>A programming language that enables interactive web pages</dd>
+        </dl>
+      </article>
+      <p>Le glossaire utilise la balise <code>&lt;dl&gt;</code> pour créer une liste de termes avec leurs définitions associées.</p>
+      <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/dl">voir plus</a>
+    </div>
+    <div class="section" id="2">
+      <h2>div, span et section</h2>
+      <article>
+        <h3>div</h3>
+       <p>Le <code>&lt;div&gt;</code> est utilisé pour diviser le contenu en sections distinctes et est souvent utilisé pour regrouper d'autres éléments HTML pour les styles ou la manipulation JavaScript.</p>
+       <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div">voir plus</a>
+      </article>
+      <article>
+        <h3>span</h3>
+        <p>Le <code>&lt;span&gt;</code>, quant à lui, est un élément en ligne qui est utilisé pour appliquer un style à une partie de texte ou pour cibler des portions spécifiques du contenu pour le stylage ou le scripting.</p>
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/span">voir plus</a>
+      </article>
+      <article>
+        <h3>section</h3>
+        <p>En HTML, la balise <code>&lt;section&gt;</code> est utilisée pour diviser le contenu d'une page web en sections ou zones thématiques. Elle est souvent utilisée pour regrouper des contenus connexes, tels que des articles, des chapitres, des groupes de contenu liés, etc. L'utilisation de <code>&lt;section&gt;</code> aide à structurer et à organiser le contenu de manière logique et sémantique. Chaque section peut avoir un titre défini par une balise de titre comme <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc., pour indiquer le sujet ou le thème de cette section.</p>
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/section">voir plus</a>
+      </article>
+      <p>Les balises <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code> et <code>&lt;section&gt;</code> sont essentielles pour structurer et organiser le contenu d'une page web de manière logique.</p>
+    </div>
+    <div class="section" id="3">
+      <h2>Tableau</h2>
+      <article>
+        <table>
+          <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>25</td>
+          </tr>
+        </table>        
+      </article>
+      <p>En HTML, les tableaux sont des éléments qui permettent d'organiser les données sous forme de lignes et de colonnes. Voici les principaux éléments utilisés pour créer des tableaux :</p>
+      <ul>
+          <li><code>&lt;table&gt;</code> : C'est l'élément de base qui définit le tableau.</li>
+          <li><code>&lt;tr&gt;</code> : Cet élément représente une ligne dans le tableau.</li>
+          <li><code>&lt;th&gt;</code> : Utilisé pour créer des cellules d'en-tête (header) dans le tableau. Le contenu de ces cellules est généralement en gras et centré par défaut.</li>
+          <li><code>&lt;td&gt;</code> : Cet élément crée des cellules de données (data) dans le tableau. Le contenu de ces cellules est généralement aligné à gauche.</li>
+        </ul>    
+        <p>Voici un exemple simple d'un tableau HTML avec une ligne d'en-tête et quelques lignes de données ci-dessus</p>
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table">voir plus</a>
+      </div>
+      <div class="section" id="4">
+        <h2>Vidéo et audio</h2>
+        <article>
+          <h3>Vidéo</h3>
+          <video controls autoplay>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+          </video>
+          <p>vidéo basique comparer a l'intégration youtube</p>
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/video">voir plus</a>
+        </article>
+        <article>
+          <h3>Audio</h3>
+            <audio controls autoplay>
+                <source src="audio.mp3" type="audio/mp3">
+                <source src="audio.ogg" type="audio/ogg">
+              </audio>
+              <p>audio simple mais a voir comment l'utiliser</p>
+              <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/audio">voir plus</a>
+        </article>
+      </div>
+      <div class="section" id="5">
+        <h2>Formulaires</h2>
+        <article>
+          <form>
+            <label for="fname">Prénom:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Nom:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <p>La balise <code>&lt;form&gt;</code> en HTML est utilisée pour créer des formulaires interactifs sur les pages web. Elle permet aux utilisateurs d'entrer des données qui peuvent être ensuite soumises à un serveur pour traitement ultérieur.</p>
+          </form>
+        </article>
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/form">voir plus</a>
+      </div>
+      <div class="section" id="6">
+        <h2>Liste</h2>
+        <article>
+          <h3>Liste non ordonnée (ul)</h3>
+          <ul>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+            <li>Élément 3</li>
+          </ul>
+          <p>La balise <code>&lt;ul&gt;</code> est utilisée pour créer une liste non ordonnée, où chaque élément est marqué par une puce. Elle est souvent utilisée pour afficher des éléments sans ordre spécifique.</p>
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul">voir plus</a>
+        </article>
+        <article>
+          <h3>Liste ordonnée (ol)</h3>
+          <ol>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+            <li>Élément 3</li>
+          </ol>
+          <p>La balise <code>&lt;ol&gt;</code> est utilisée pour créer une liste ordonnée, où chaque élément est numéroté. Elle est souvent utilisée pour afficher des éléments dans un ordre spécifique.</p>
+          <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol">voir plus</a>
+        </article>
+      </div>
+    </main>
+    <script href="script.js"></script>
+  </body>
+</html>
