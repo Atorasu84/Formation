@@ -1,0 +1,109 @@
+/* Reset des marges et des rembourrages */
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd, figure, figcaption, blockquote, form, fieldset, legend, input, textarea, button, table, th, td {
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #333;
+}
+
+main {
+    margin-left: 20%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Dégradé sur les titres */
+h1, h2 {
+    background: linear-gradient(to right, #ffdb58, #ff00b3); /* Dégradé jaune */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Applique le dégradé à la couleur du texte */
+}
+
+/* Couleur de fond jaune sur les sections */
+.section {
+    background-color: #665000; /* Jaune clair */
+    color: white;   
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Transition sur les boutons */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bleu par défaut */
+    color: #ffffff; /* Texte blanc */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 2%;
+}
+
+a:hover {
+    background-color: #0056b3; /* Bleu légèrement plus foncé au survol */
+    transform: translateY(-2px); /* Effet de léger déplacement vers le haut */
+}
+
+/* Marge inférieure pour les liens affichés en bloc */
+a.block {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Différenciation entre les sections */
+.section h2 {
+    border-bottom: 3px solid #ffffff; /* Ligne de séparation sous les titres */
+    padding-bottom: 10px; /* Marge en bas du titre */
+}
+
+aside {
+    position: fixed; /* Fixation de l'élément */
+    top: 0; /* Positionnement au bord supérieur de la fenêtre */
+    left: 0; /* Positionnement au bord gauche de la fenêtre */
+    width: 200px; /* Largeur de l'élément */
+    height: 100%; /* Hauteur de l'élément pour occuper toute la hauteur de l'écran */
+    background-color: #333; /* Couleur de fond */
+    padding: 20px; /* Espacement interne */
+    box-sizing: border-box; /* Inclure le padding dans la largeur et la hauteur */
+  }
+  
+  #nav-list {
+    list-style-type: none; /* Suppression des puces de liste */
+    padding: 0; /* Suppression des marges internes */
+  }
+  
+  .nav-item {
+    margin-bottom: 10px; /* Espacement entre les éléments de navigation */
+  }
+  
+  .nav-link {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Suppression du soulignement des liens */
+    font-size: 16px; /* Taille de police */
+    font-weight: bold; /* Graisse du texte */
+    transition: 0.3s ease; /* Transition pour l'effet de survol */
+  }
+  
+  .nav-link:hover {
+    color: rgb(255, 255, 255); /* Couleur du texte des liens au survol */
+  }  
